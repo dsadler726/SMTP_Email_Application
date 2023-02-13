@@ -5,20 +5,20 @@ SMTP/HTTP Client Server Application
 
 Features:
 
-	Utilizes c/c++ socket API to create a client and server using TCP. 
+Utilizes c/c++ socket API to create a client and server using TCP. 
 
-	Built using the SMTP RFC, allowing a client to send commands to a server to create and process emails to other users within the server. 
+Built using the SMTP RFC, allowing a client to send commands to a server to create and process emails to other users within the server. 
 
-	Clients can download unread emails from server and have them stored locally using a HTTP GET request using the HTTP protocol and corresponding RFC.
+Clients can download unread emails from server and have them stored locally using a HTTP GET request using the HTTP protocol and corresponding RFC.
 
 Running the program:
 
-	running the makefile will create the files needed to run the program, the blank conf files should be set to a port before use
-	all files to run the program will be set within the app folder for better portability, allowing multiple instances over several containers.
+running the makefile will create the files needed to run the program, the blank conf files should be set to a port before use
+all files to run the program will be set within the app folder for better portability, allowing multiple instances over several containers.
 
-	to run the server, on a terminal, enter ./server server.conf to boot up the SMPT and HTTP servers.
+to run the server, on a terminal, enter ./server server.conf to boot up the SMPT and HTTP servers.
 
-	Client side, in a different terminal/instance ./client client.conf will boot up the client
+Client side, in a different terminal/instance ./client client.conf will boot up the client
 
 
 
