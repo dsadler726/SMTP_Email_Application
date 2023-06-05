@@ -1,0 +1,29 @@
+Dakota Sadler
+CS447
+Project 02
+
+To run program, simply run make within the terminal to run the Makefile
+
+NOTE: when servers first start there is a 10 second delay so that the other servers can be properly started
+if the other servers are not started by the 10 second delay the server wont see them and will throw an error
+
+when testing I had all the (./server server.conf)'s typed out and hit enter in order
+
+if for any reason the make file were to fail,
+    	c++ -std=c++1z Server_Driver.cpp -o server
+	c++ -std=c++1z Client_Driver.cpp -o client
+
+	c++ -std=c++1z SMTP_Client.cpp -o SMTP_Client
+	c++ -std=c++1z SMTP_Server.cpp -o SMTP
+
+	c++ -std=c++1z HTTP_Client.cpp -o HTTP_Client
+	c++ -std=c++1z HTTP_Server.cpp -o HTTP
+
+will compile the clients and servers
+
+to run the programs:
+    ./server server.conf
+    ./client client.conf
+
+Conf files must be set with testers values before running
+
